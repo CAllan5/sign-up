@@ -15,22 +15,25 @@ body {
 .main {
     display: flex;
     background-color: white;
-    width: 65rem;
+    max-width: 60rem;
     height: 100vh;
 }
 
-img{
+.mainImage {
 
-    width: 27rem; 
+    background-image: url('./images/water.jpeg'); 
+    width: 40%; 
     height: 100%;
+    background-position: bottom;
+    
 }
-
-
 
 .info {
 
     display: flex;
     flex-direction: column;
+    height: 100%;
+    width: 60%;
     overflow: auto;
     
     
@@ -112,6 +115,9 @@ button {
     border-radius: 0.5rem;
     color: whitesmoke;
     box-shadow: 2px 4px rgba(212, 203, 203, 0.5);
+}
+button:hover {
+    transform: scale(1.05);
 }
 
 a {
