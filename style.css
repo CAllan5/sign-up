@@ -144,6 +144,13 @@ input:hover{
     
     transform: scale(1.1);
 }
+.pError {
+    color: red;
+    padding: 0;
+    margin-bottom: -1.5rem;
+    margin-top: -0.05rem;
+    gap: 0;
+}
 
 button {
 

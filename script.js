@@ -5,6 +5,7 @@ const lastName = document.querySelector('#last_name');
 const email = document.querySelector('#email');
 const btn = document.querySelector('button#submit');
 const inputLines = document.querySelectorAll('.mainForm input');
+const passError = document.querySelector('.pError');
 
 inputLines.forEach(line =>{
 
@@ -22,28 +23,29 @@ btn.addEventListener('click', () => {
         pass.classList.toggle('inputError');
         
         conPass.classList.toggle('inputError');
+        passError.textContent = '*Error! Passwords do not match.';
       
         
         btn.disabled = true;
        
     }if( email.value.trim().length < 1){
-        email.style.border = "1px solid red";
+        email.style.border = "2px solid red";
         btn.disabled = true;
         
     }if( pass.value.trim().length < 1){
-        pass.style.border = "1px solid red";
+        pass.style.border = "2px solid red";
         btn.disabled = true;
 
     }if( conPass.value.trim().length < 1){
-        conPass.style.border = "1px solid red";
+        conPass.style.border = "2px solid red";
         btn.disabled = true;
 
     }if( firstName.value.trim().length < 1){
-        firstName.style.border = "1px solid red";
+        firstName.style.border = "2px solid red";
         btn.disabled = true;
 
     }if( lastName.value.trim().length < 1){
-        lastName.style.border = "1px solid red";
+        lastName.style.border = "2px solid red";
         btn.disabled = true;
     }
     else{
