@@ -76,6 +76,7 @@ body {
     font-weight: 600;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     box-shadow: 0px 3px rgba(212, 203, 203, 0.3);
+    text-align: justify;
     
 }
 .disclaimer{
@@ -132,10 +133,15 @@ label {
 
 input {
     border-radius: 0.4rem;
+    border: 1px solid black;
 
 }
+.inputError {
+    border: 2px solid red;
+}
+
 input:hover{
-    border: 2px solid black;
+    
     transform: scale(1.1);
 }
 
